@@ -10,7 +10,7 @@ string[] secondArray = new string[firstArray.Length];
 SecondArraySize3(firstArray,secondArray);
 PrintDataMass(secondArray, "Полученный массив:");
 
-void SecondArraySize3(string[] array1, string[] array2) //Метод создания второго массива из первого по условию
+void SecondArraySize3(string[] array1, string[] array2) //Метод заполнения второго массива из первого по условию
 {
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
