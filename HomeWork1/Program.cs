@@ -2,13 +2,15 @@
 using System.Linq;
 using System;
 
-
 //string[] firstArray = new string[5] {"123", "23", "hello", "world", "res"};  можно ввести массив изначально
 
+string [] firstArray = ReadDataMass("Введите количество элементов cтрочного массива, которые хотите ввести: ");
+PrintDataMass(firstArray, "Введенный массив:");
+string[] secondArray = new string[firstArray.Length];
+SecondArraySize3(firstArray,secondArray);
+PrintDataMass(secondArray, "Полученный массив:");
 
-
-
-void SecondArraySize3(string[] array1, string[] array2)
+void SecondArraySize3(string[] array1, string[] array2) //Метод создания второго массива из первого по условию
 {
     int count = 0;
     for (int i = 0; i < array1.Length; i++)
@@ -38,9 +40,11 @@ string [] ReadDataMass(string msg)  //Метод ввода строчного �
 void PrintDataMass(string [] arr,string msg) //Метод, выводящий на печать строчный массив
 
 { 
-    System.Console.WriteLine();
     Console.WriteLine(msg);
     for (int i = 0; i < arr.Length; ++i)
-    Console.Write("{0} ", arr[i]);
-    System.Console.WriteLine();
+        {
+        Console.Write("{0} ", arr[i]);
+        }
+        System.Console.WriteLine();
 }
+
