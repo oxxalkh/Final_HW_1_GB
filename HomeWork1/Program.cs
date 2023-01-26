@@ -2,7 +2,24 @@
 using System.Linq;
 using System;
 
+
 //string[] firstArray = new string[5] {"123", "23", "hello", "world", "res"};  можно ввести массив изначально
+
+
+
+
+void SecondArraySize3(string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+    if(array1[i].Length <= 3)
+        {
+        array2[count] = array1[i];
+        count++;
+        }
+    }
+}
 
 string [] ReadDataMass(string msg)  //Метод ввода строчного массива с клавиатуры
 {
